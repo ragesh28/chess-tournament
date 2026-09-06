@@ -1,8 +1,11 @@
 # ♟ Chess Tournament Management System
 
-A client-side Chess Tournament Management and Match Simulation System built with **Svelte** and **JavaScript**, powered by **Vite** and persistent browser `localStorage`.
-
-Built for the **Bytelogik Software Developer Assignment**.
+> **Bytelogik Software Developer Assignment – Chess Tournament Management System**  
+> **Developer**: Ragesh L  
+> **Education**: B.Tech AI & Data Science | 2022–2026  
+> **Live Demo**: [https://ragesh28.github.io/chess-tournament/](https://ragesh28.github.io/chess-tournament/)  
+> **Portfolio**: [https://ragesh-ai-portfolio.netlify.app/](https://ragesh-ai-portfolio.netlify.app/)  
+> **GitHub**: [https://github.com/ragesh28](https://github.com/ragesh28)
 
 ---
 
