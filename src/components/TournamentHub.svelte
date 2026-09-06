@@ -102,6 +102,7 @@
             class="btn btn-success btn-lg"
             on:click={handleStart}
             disabled={enrolledPlayers.length < 2}
+            title="Start tournament and generate randomized round pairings using Fisher-Yates shuffle"
           >
             <AppIcon name="play" />
             <span>Start & Generate Pairings</span>
@@ -111,6 +112,7 @@
             class="btn btn-primary btn-lg"
             on:click={handleSimulateAll}
             disabled={$isSimulating || $activeTournamentMatches.every(m => m.isCompleted)}
+            title="Simulate all pending round match outcomes with 50/50 probability"
           >
             {#if $isSimulating}
               <AppIcon name="timer" className="spinner" />
@@ -123,7 +125,11 @@
               <span>Simulate All Matches</span>
             {/if}
           </button>
-          <button class="btn btn-secondary" on:click={() => (isResetModalOpen = true)}>
+          <button
+            class="btn btn-secondary"
+            on:click={() => (isResetModalOpen = true)}
+            title="Reset event back to Draft and clear simulated results"
+          >
             <AppIcon name="reset" />
             <span>Reset Event</span>
           </button>
