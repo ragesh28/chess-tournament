@@ -4,14 +4,13 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: 'pages'
   cancel-in-progress: false
@@ -38,10 +37,13 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Ensure .nojekyll exists
+        run: touch docs/.nojekyll
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './docs'
 
       - name: Deploy to GitHub Pages
         id: deployment
