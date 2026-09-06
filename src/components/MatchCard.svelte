@@ -215,7 +215,7 @@
     gap: 0.75rem;
   }
 
-  .piece-indicator {
+  :global(.piece-indicator) {
     width: 1.15rem;
     height: 1.15rem;
     line-height: 1;

@@ -90,10 +90,6 @@
     gap: 0.5rem;
   }
 
-  .footer-arena-mark {
-    width: 26px;
-    height: 26px;
-  }
 
   .footer-title {
     font-weight: 800;

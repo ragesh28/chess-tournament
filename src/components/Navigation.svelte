@@ -146,7 +146,7 @@
     box-shadow: 0 8px 22px rgba(184, 128, 36, 0.27);
   }
 
-  .arena-logo {
+  :global(.arena-logo) {
     width: 32px;
     height: 32px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.45));
@@ -221,7 +221,7 @@
     box-shadow: 0 8px 18px rgba(184, 128, 36, 0.22);
   }
 
-  .tab-icon {
+  :global(.tab-icon) {
     width: 1rem;
     height: 1rem;
   }

@@ -328,7 +328,7 @@
     max-width: 100%;
   }
 
-  .search-icon {
+  :global(.search-icon) {
     position: absolute;
     left: 0.875rem;
     width: 0.875rem;
@@ -404,7 +404,7 @@
     gap: 0.75rem;
   }
 
-  .empty-icon {
+  :global(.empty-icon) {
     width: 3rem;
     height: 3rem;
     opacity: 0.4;
