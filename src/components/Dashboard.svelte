@@ -370,6 +370,7 @@
     text-align: left;
     cursor: pointer;
     transition: all 0.15s ease;
+    color: var(--text-primary);
   }
 
   .action-tile:hover {
@@ -379,8 +380,30 @@
   }
 
   .tile-icon {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    flex-shrink: 0;
+    transition: all 0.15s ease;
+  }
+
+  .tile-icon :global(.app-icon) {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #ffffff;
+    stroke: #ffffff;
+  }
+
+  .action-tile:hover .tile-icon {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: #ffffff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
   }
 
   .tile-text {
@@ -409,9 +432,10 @@
     padding: 0.875rem;
   }
 
-  .note-icon {
+  :global(.note-icon) {
     width: 1.2rem;
     height: 1.2rem;
+    color: var(--primary);
   }
 
   .empty-box {
@@ -424,7 +448,7 @@
     color: var(--text-muted);
   }
 
-  .empty-icon {
+  :global(.empty-icon) {
     width: 2.5rem;
     height: 2.5rem;
     opacity: 0.4;
