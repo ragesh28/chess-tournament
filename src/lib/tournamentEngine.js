@@ -99,7 +99,11 @@ export function simulateMatchOutcome(match) {
  * 2. Total Wins
  * 3. Alphabetical by player name
  */
-export function calculateRankings(enrolledPlayerIds, tournamentMatches, playersList) {
+export function calculateRankings(enrolledPlayerIds, tournamentMatches = [], playersList = []) {
+  if (!enrolledPlayerIds || enrolledPlayerIds.length === 0) {
+    return [];
+  }
+
   const playerMap = new Map(playersList.map(p => [p.id, p]));
   const scoreMap = new Map();
 
