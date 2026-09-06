@@ -27,7 +27,13 @@
     on:keydown|self={(e) => e.key === 'Escape' && close()}
     role="presentation"
   >
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title-id">
+    <div
+      class="modal-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title-id"
+      tabindex="-1"
+    >
       <div class="modal-header">
         <h3 id="modal-title-id" class="modal-title">{title}</h3>
         <button class="modal-close-btn" on:click={close} aria-label="Close modal"><AppIcon name="close" /></button>
